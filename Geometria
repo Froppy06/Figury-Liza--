@@ -1,0 +1,43 @@
+import math
+
+# ---------------------------
+def PoleVszescianu ():
+    x = float(input('x = '))    
+    print('Pc = ', 6*x**2)
+
+# ---------------------------
+def ObjetoscKuli ():
+    r = float(input('r = '))
+    x = math.pi
+    print('V = ', 4/3*x*r**3)
+
+# ---------------------------
+def ObjetoscWalca ():
+    r = float(input('r = '))
+    h = float(input('h = '))
+    x = math.pi
+    print('V = ', x*r**2*h)
+
+# -------------------------
+
+print(f"A - Sześcian")
+print(f"B - Koło")
+print(f"C - Walec")
+coLiczyc = input(f"Prosze podaj co chcesz obliczyć")
+
+
+if coLiczyc == 'A':
+    PoleVszescianu()
+
+elif coLiczyc == 'B':
+    ObjetoscKuli()
+
+elif coLiczyc == 'C':
+    ObjetoscWalca() 
+
+else:
+    print('Nie ma takiej komendy')
+
+# -----------------------------
+
+
